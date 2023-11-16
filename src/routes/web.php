@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Person;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +13,6 @@ use App\Models\Person;
 |
 */
 
-Route::get('/softdelete', function () {
-    Person::find(1)->delete();
+Route::get('/', function () {
+    return view('welcome');
 });
